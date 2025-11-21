@@ -1,4 +1,5 @@
-#!/usr/bin/python3def uniq_add(my_list=[]):
+#!/usr/bin/python3
+def uniq_add(my_list=[]):
     unique_items = []
     total = 0
 
