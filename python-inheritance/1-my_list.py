@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Module that defines the MyList class."""
+"""this is document"""
+
 
 class MyList(list):
-    """MyList class that inherits from the built-in list."""
-
+    """this is document"""
     def print_sorted(self):
-        """Prints the list in ascending order without modifying it."""
+        """Prints the list sorted"""
         print(sorted(self))
