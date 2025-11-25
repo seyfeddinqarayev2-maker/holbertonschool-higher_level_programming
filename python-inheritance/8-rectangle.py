@@ -2,6 +2,7 @@
 """Bu modul Rectangle sinfini ehtiva edir"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """Düzbucaqlı sinfi, BaseGeometry-dən miras alır"""
 
