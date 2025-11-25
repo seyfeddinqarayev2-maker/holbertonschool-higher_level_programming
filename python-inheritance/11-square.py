@@ -19,7 +19,4 @@ class Square(Rectangle):
         return self.__size * self.__size
 
     def __str__(self):
-    """Kvadratı [Square] <width>/<height> formatında string-ə çevirir"""
-    return "[Square] {}/{}".format(
-        self._Rectangle__width, self._Rectangle__height
-    )
+        return "[Square] {}/{}".format(self._Rect__width, self._Rect__height)
