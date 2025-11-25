@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class with instance counting and customizable print symbol."""
+"""Defines a Rectangle class with number of instances and print symbol"""
 
 
 class Rectangle:
