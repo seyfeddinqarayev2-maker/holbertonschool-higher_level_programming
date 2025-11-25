@@ -1,14 +1,13 @@
 #!/usr/bin/python3
+"""Bu modul Rectangle sinfini ehtiva edir"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
-    """BaseGeometry-dən miras alan Düzbucaqlı sinfi"""
+    """Düzbucaqlı sinfi, BaseGeometry-dən miras alır"""
 
-    def __init__(self, en, uzunluq):
-        """Düzbucaqlını en və uzunluq ilə yaradır"""
-        # En və uzunluğu yoxlayır ki, müsbət tam ədəd olsun
-        self.integer_validator("en", en)
-        self.integer_validator("uzunluq", uzunluq)
-        # Özəl atributlar
-        self.__en = en
-        self.__uzunluq = uzunluq
+    def __init__(self, width, height):
+        """Düzbucaqlını width və height ilə yaradır"""
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
