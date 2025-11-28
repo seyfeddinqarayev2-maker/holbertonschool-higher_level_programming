@@ -1,2 +1,4 @@
 -- lll
-SELECT score,name FROM second_table ORDER BY score DECS;
+SELECT score,name
+FROM second_table
+ORDER BY score DESC;
