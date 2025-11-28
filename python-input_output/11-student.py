@@ -25,7 +25,7 @@ class Student:
     def reload_from_json(self, json):
         """Replace all attributes of the Student instance with those in
         json.
-        
+
         json is assumed to be a dictionary where keys are attribute names
         and values are the new attribute values.
         """
