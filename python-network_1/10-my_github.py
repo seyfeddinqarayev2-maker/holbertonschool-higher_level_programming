@@ -12,11 +12,10 @@ if __name__ == "__main__":
 
     try:
         response = requests.get(url, auth=(username, token))
-        response.raise_for_status()  # Raise HTTPError if status >= 400
-        json_data = response.json()
-        print(json_data.get("id"))
-    except requests.HTTPError as e:
-        print("Error code:", response.status_code)
-    except requests.RequestException as e:
-        print("Request failed:", e)
-#!/usr/bin/python3
+        if response.status_code == 200:
+            json_data = response.json()
+            print(json_data.get("id"))
+        else:
+            print(None)
+    except requests.RequestException:
+        print(None)
