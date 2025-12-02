@@ -1,0 +1,22 @@
+#!/bin/bash
+#   stifad ^y: ./createfile.sh filename.sh
+# Fayl ad   arqument kimi verilm ^ylidir
+if [ -z "$1" ]; then
+  echo "  stifad ^y: $0 fayl_adi"
+  exit 1
+fi
+filename="$1"
+x
+#  ^og ^yr fayl art  q m  vcuddursa x ^yb ^yrdarl  q et
+if [ -e "$filename" ]; then
+  echo " ^z   ^o  $filename art  q m  vcuddur!"
+  exit 1
+fi
+# Fayl   yarad  b ilk 2 s ^ytri yaz
+cat <<EOF > "$filename"
+#!/usr/bin/python3
+EOF
+# Fayl   icra edil ^y bil ^yn et
+chmod +x "$filename"
+echo " ^|^e $filename yarad  ld   v ^y icra h  ququ verildi."
+nano "$filename"
